@@ -1,0 +1,30 @@
+.align-items-centro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textcool {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .hgrande {
+    font-size: 50px;
+  }
+
+  .contenedor {
+    margin-top: 2cm;
+    margin-left: 0.5cm;
+    text-align: left;
+  }
+
+  .miClase {
+    width: 200px;
+    font-size: 16px;
+    /* otras propiedades de form-control */
+  }

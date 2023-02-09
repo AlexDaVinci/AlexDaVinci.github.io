@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metodo simplex: dos fases</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  
+  </head>
+  <body style="background-image: url(assets/img/bg-masthead.jpg); background-size: cover; height: 100vh;">
+    <div id="home" class="align-items-centro ">
+        <div class="container px-4 px-lg-5 text-center">
+          <h1 class="mb-1 hgrande textcool">Metodo Simplex Dos Fases</h1>
+          <h3 class="mb-5"><em>Calcula tus soluciones óptimas con rapidez y precisión</em></h3>
+          <button id="generarMatriz" type="button" class="btn btn-primary btn-xl" data-bs-toggle="modal" data-bs-target="#exampleModal">¡Define tu matriz!</button>
+        </div>
+    </div>
+    <div id="fase2" style="display:none">
+
+    </div>
+    <div id="tablas" style="display:none">
+
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div  class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Define tu matriz</h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="form-label">Restricciones</label>
+                            <input type="number" name="" id="restriccion" class="form-control" min="0" max="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2" class="form-label">Variables de decisión</label>
+                            <input type="number" name="" id="decision" class="form-control" min="0" max="10">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-white text-dark" data-bs-dismiss="modal">Cerrar</button>
+                    <button onclick="generarMatriz()" id="cambiar" type="button" class="btn btn-primary"  data-bs-dismiss="modal">Generar matriz</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/GenerarMatriz.js"></script>
+  </body>
+</html>
